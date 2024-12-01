@@ -1,0 +1,380 @@
+*, body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+:root{
+    --miniPinkWhite1-201: rgba(255, 204, 201, 1);
+    --white1-255: rgba(255, 255, 255, 1);
+    --input056-255: rgba(255, 255, 255, 0.56);
+    --inputbg021: rgba(255, 255, 255, 0.21);
+    --pink1-146: rgba(251, 152, 146, 1);
+    --miniPink1-194: rgba(246, 197, 194, 1);
+    --grey1-109: rgba(109, 109, 109, 1);
+    --miniGray: rgba(104, 104, 104, 1);
+    --bigGray: rgba(167, 167, 167, 1);
+    --gray1-213: rgba(213, 213, 213, 1);
+    --gradient-red-background: linear-gradient(to right, rgba(255, 81, 69, 1), rgba(217, 40, 28, 1));
+    --mbDopRed: rgba(254, 79, 68, 1);
+    --black1: rgba(0, 0, 0, 1);
+    --miniBlack33-1: rgba(33, 33, 33, 1);
+    --formBlack079: rgba(0, 0, 0, 0.79);
+    --formPlace: rgba(0, 0, 0, 0.48);
+}
+
+
+.aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 247px;
+    height: 400px;
+    margin-right: 26px;
+    margin-top: 10px;
+}
+
+
+.aside > h1{
+    margin-right: 150px;
+    color: var(--miniBlack33-1);
+    font-weight: 700;
+    font-size: 0.93rem;
+}
+
+.priceFilt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 85px;
+    width: 100%;
+}
+
+.minMaxCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.minMaxCont p{
+    font-size: 0.87rem;
+    color: var(--gray1-213);
+    font-weight: 400;
+}
+
+
+.inpContFilt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 39px;
+}
+
+.inpContFilt input{
+    width: 124px;
+    height: 39px;
+    color: var(--black1);
+    font-size: 0.87rem;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+
+.inpContFilt input:nth-child(1){
+    padding: 10px 59px 10px 10px;
+}
+
+.inpContFilt input:nth-child(2){
+    padding: 10px 10px 10px 59px;
+}
+
+
+.polzCont{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 13px;
+}
+
+
+.checkCont{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 160px;
+}
+
+.checkCont h1{
+    color: var(--miniBlack33-1);
+    font-weight: 700;
+    font-size: 0.93rem;
+}
+
+
+.check{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 120px;
+    width: 70%;
+}
+
+
+.checkBox{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+
+
+
+.checkBox input{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--gray1-213);
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: var(--white1-255);
+    position: relative;
+    appearance: none;
+}
+
+
+.checkBox input:checked {
+    background-color: var(--white1-255); 
+    border-color: var(--gray1-213);
+}
+
+
+.checkBox input:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+    background: url('/images/галка.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+.checkBox span{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black1);
+}
+
+
+
+.aside button{
+    color: var(--white1-255);
+    font-size: 0.87rem;
+    font-weight: 600;
+    padding: 13px 45px;
+    background: var(--gradient-red-background);
+    border: 0;
+    border-radius: 71px;
+}
+
+.aside > p{
+    color: var(--miniGray);
+    font-size: 0.87rem;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1024px){
+    .aside{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 200px;
+        height: 400px;
+        margin-right: 26px;
+        margin-top: 10px;
+    }
+    
+    
+    .aside > h1{
+        margin-right: 100px;
+        color: var(--miniBlack33-1);
+        font-weight: 700;
+        font-size: 0.93rem;
+    }
+    
+    .priceFilt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 85px;
+        width: 100%;
+    }
+    
+    .minMaxCont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .minMaxCont p{
+        font-size: 0.87rem;
+        color: var(--gray1-213);
+        font-weight: 400;
+    }
+    
+    
+    .inpContFilt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 39px;
+    }
+    
+    .inpContFilt input{
+        width: 100px;
+        height: 39px;
+        color: var(--black1);
+        font-size: 0.87rem;
+        font-weight: 400;
+        border-collapse: collapse;
+    }
+    
+    .inpContFilt input:nth-child(1){
+        padding: 5px 30px 5px 5px;
+    }
+    
+    .inpContFilt input:nth-child(2){
+        padding: 5px 5px 5px 53px;
+    }
+    
+    
+    .polzCont{
+        margin-bottom: 10px;
+        width: 100%;
+        height: 13px;
+    }
+    
+    
+    .checkCont{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 160px;
+    }
+    
+    .checkCont h1{
+        color: var(--miniBlack33-1);
+        font-weight: 700;
+        font-size: 0.93rem;
+    }
+    
+    
+    .check{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 120px;
+        width: 90%;
+    }
+    
+    
+    .checkBox{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 25px;
+    }
+    
+    
+    
+    
+    .checkBox input{
+        width: 25px;
+        height: 25px;
+        border: 1px solid var(--gray1-213);
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: var(--white1-255);
+        position: relative;
+        appearance: none;
+    }
+    
+    
+    .checkBox input:checked {
+        background-color: var(--white1-255); 
+        border-color: var(--gray1-213);
+    }
+    
+    
+    .checkBox input:checked::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 15px;
+        height: 15px;
+        background: url('/images/галка.png') no-repeat center center;
+        background-size: contain;
+    }
+    
+    
+    .checkBox span{
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--black1);
+    }
+    
+    
+    
+    .aside button{
+        color: var(--white1-255);
+        font-size: 0.87rem;
+        font-weight: 600;
+        padding: 10px 40px;
+        background: var(--gradient-red-background);
+        border: 0;
+        border-radius: 71px;
+    }
+    
+    .aside > p{
+        color: var(--miniGray);
+        font-size: 0.77rem;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 549px){
+    .aside{
+        display: none;
+    }
+}
+
+
+@media (max-width: 375px){
+    .aside{
+        display: none;
+    }
+}

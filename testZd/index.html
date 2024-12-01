@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Test App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="head">
+          <div class="miniInfoHead">
+            <nav>
+              <ul>
+                <li>Главная</li>
+                <li>О нас</li>
+                <li>Бренды</li>
+              </ul>
+            </nav>
+            <div style="display: none;" class="noneHead">
+              <div class="noneContact">
+                <img src="/images/труба.png" alt="">
+                <p>+7(999) 999-99-99</p>
+              </div>
+              <span>Заказать звонок</span>
+            </div>
+          </div>
+          <div class="mainHead">
+            <img class="menuLogo" src="images/меню.png" alt="">
+            <div class="logoHead">
+              <img class="logo" id="backToProdLogo" src="images/лого.png" alt="">
+              <h1>IKISOUND</h1>
+            </div>
+            <input type="text" placeholder="Поиск в каталоге товаров">
+            <div class="resConstHead">
+              <img class="trubaLogo" src="images/труба.png" alt="">
+              <div class="numHead">
+                <p>8 800 444 20 35</p>
+                <h3>Обратная связь</h3>
+              </div>
+            </div>
+            <div class="favHead">
+              <img class="heartLogo" src="images/сердце.png" alt="">
+              <img class="oneLogo" src="images/единичка.png" alt="">
+              <p>Избранное</p>
+            </div>
+            <div id="cartBtn" class="cartFav">
+              <img class="oneLogo" src="images/единичка.png" alt="">
+              <img class="cartLogo" src="images/корзина.png" alt="">
+              <p>Корзина</p>
+            </div>
+          </div>
+        </div>
+        <div class="headAdap">
+          <div class="mainAdapHead">
+            <img id="logoMainAdap" src="/images/лого.png" alt="">
+            <div class="adapCartHead">
+              <img src="/images/корзина.png" alt="">
+              <span>Корзина</span>
+            </div>
+          </div>
+          <div style="display: none;" class="headCartAdap">
+            <div class="infoProdAdap">
+              <h1>Корзина (<span id="prodIndex2"></span>)</h1>
+              <p>Сумма заказа: <span id="itogPriceHead"></span></p>
+            </div>
+            <img id="mainAdapCArtHead" src="/images/лого.png" alt="">
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="main" class="main">
+          <section class="close"> <!-- Sec-1-->
+            <div class="secText">
+              <div class="textMini">
+                <nav>
+                  <ul>
+                    <li>Главная</li>
+                    <li>/</li>
+                    <li>О нас</li>
+                  </ul>
+                </nav>
+                <h3>МОНИТОРЫ СТУДИЙНЫЕ</h3>
+              </div>
+            </div>
+          </section>
+          <section class="close"> <!-- Sec-2-->
+            <div class="glavMainSec">
+              <aside>
+                <div class="aside">
+                  <h1>СТОИМОСТЬ</h1>
+                  <div class="priceFilt">
+                    <div class="minMaxCont">
+                      <p>От</p>
+                      <p>До</p>
+                    </div>
+                    <div class="inpContFilt">
+                      <input id="minInp" type="text" placeholder="...USD">
+                      <input id="maxInp" type="text" placeholder="...USD">
+                    </div>
+                    <div class="polzCont">
+                      ползунок
+                    </div>
+                  </div>
+                  <div class="checkCont">
+                    <h1>КАТЕГОРИИ</h1>
+                    <div class="check">
+                      <div class="checkBox">
+                        <input id="mensCheck" type="checkbox" name="option1" value="men's clothing">
+                        <span>men's clothing</span>
+                      </div>
+                      <div class="checkBox">
+                        <input id="jeweleryCheck" type="checkbox" name="option1" value="jewelery">
+                        <span>jewelery</span>
+                      </div>
+                      <div class="checkBox">
+                        <input id="electronicsCheck" type="checkbox" name="option1" value="electronics">
+                        <span>electronics</span>
+                      </div>
+                      <div class="checkBox">
+                        <input id="womenCheck" type="checkbox" name="option1" value="women's clothing">
+                        <span>women's clothing</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="filtBtn">Подобрать</button>
+                  <p id="filterNone">Сбросить фильтры</p>
+                </div>
+              </aside>
+              <section> <!-- Sec-3-->
+                <div id="secProduct" class="secProduct">
+    
+                </div>
+              </section>
+            </div>
+          </section>
+        </div>
+        <div style="display: none;" id="cartSec" class="cartSec"> <!-- cartSec-->
+          <div class="cartSecCont">
+
+          
+          <div class="textCont">
+            <nav>
+              <ul>
+                <li>Главная</li>
+                <li>/</li>
+                <li>Корзина</li>
+              </ul>
+            </nav>
+            <h3>КОРЗИНА</h3>
+          </div>
+          <div class="cartAndFormCont">
+            <div id="cartCont" class="cartCont">
+
+            </div>
+            <div class="form">
+              <form class="formCont">
+                <div class="infoProdForm">
+                  <div class="priceForm">
+                    <p>ИТОГО</p>
+                    <p id="itogPrice1">USD</p>
+                  </div>
+                  <div class="productInfo">
+                    <p>Товары: <span id="prodIndex"></span>шт</p>
+                    <p id="itogPrice2">USD</p>
+                  </div>
+                </div>
+                <div class="nameCont">
+                  <p>Имя/Фамилия/Отчество*</p>
+                  <input type="text" placeholder="Иван Иванов Иванович">
+                </div>
+                <div class="phoneCont">
+                  <p>Телефон*</p>
+                  <input type="text" placeholder="Иванов">
+                </div>
+                <button id="saleBtn">Оформить заказ</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
+
+
+
